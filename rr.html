@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricochet Rimbule </title>
+    <link rel="stylesheet" href ="stlye.css" >
+    
+
+</head>
+<body>
+
+<div id="gameboard"></div>
+<p> It is <span id="player"></span>'s go.</p>
+<p id="info-display"></p>
+<div class="timer" id="player1">
+    <h2>black: <span id="timer1">00:00</span></h2>
+    <button onclick="startTimer(1)">Start black</button>
+    <button onclick="stopTimer(1)">Stop black</button>
+    <button onclick="resetTimer(1)">Reset black</button>
+</div>
+
+<div class="timer" id="player2">
+    <h2>white: <span id="timer2">00:00</span></h2>
+    <button onclick="startTimer(2)">Start white</button>
+    <button onclick="stopTimer(2)">Stop white</button>
+    <button onclick="resetTimer(2)">Reset white</button>
+</div>
+
+<script src="pieces.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
